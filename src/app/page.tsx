@@ -1,9 +1,11 @@
+import Navbar from "@/components/layout/Navbar";
 import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center">
+      <Navbar />
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 pt-24 text-center">
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
           Enterprise Infrastructure • Cloud • Networking
         </p>
