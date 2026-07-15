@@ -2,6 +2,7 @@ import Experience from "@/components/home/Experience";
 import Certifications from "@/components/home/Certifications";
 import Contact from "@/components/home/Contact";
 import HomeLab from "@/components/home/HomeLab";
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import ProjectCard from "@/components/projects/ProjectCard";
 import Button from "@/components/ui/Button";
@@ -97,6 +98,7 @@ export default function Home() {
        <Certifications />
        <HomeLab />
        <Contact />
+       <Footer />
     </main>
   );
 }
