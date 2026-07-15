@@ -1,3 +1,4 @@
+import MobileMenu from "@/components/layout/MobileMenu";
 const links = [
   { name: "Projects", href: "#projects" },
   { name: "Home Lab", href: "#lab" },
@@ -35,7 +36,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-
+<MobileMenu />
       </nav>
     </header>
   );
