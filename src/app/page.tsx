@@ -28,8 +28,15 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <Button>View Projects</Button>
-          <Button variant="secondary">Download Resume</Button>
+          <Button href="#projects">View Projects</Button>
+
+<Button
+  href="/Zeyad_Almahmoudi_Resume_IT_Support.pdf"
+  variant="secondary"
+  download
+>
+  Download Resume
+</Button>
         </div>
       </section>
 
