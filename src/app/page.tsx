@@ -1,3 +1,4 @@
+import Experience from "@/components/home/Experience";
 import Navbar from "@/components/layout/Navbar";
 import ProjectCard from "@/components/projects/ProjectCard";
 import Button from "@/components/ui/Button";
@@ -88,6 +89,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Experience />
     </main>
   );
 }
