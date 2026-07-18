@@ -1,6 +1,6 @@
-import Experience from "@/components/home/Experience";
 import Certifications from "@/components/home/Certifications";
 import Contact from "@/components/home/Contact";
+import Experience from "@/components/home/Experience";
 import HomeLab from "@/components/home/HomeLab";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -23,26 +23,26 @@ export default function Home() {
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
           Building enterprise-grade infrastructure solutions with Windows
-          Server, Hyper-V, Azure, Microsoft 365, Networking, Virtualization, and
-          Automation.
+          Server, Hyper-V, Azure, Microsoft 365, networking, virtualization, and
+          automation.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Button href="#projects">View Projects</Button>
 
-<Button
-  href="/Zeyad_Almahmoudi_Resume_IT_Support.pdf"
-  variant="secondary"
-  download
->
-  Download Resume
-</Button>
+          <Button
+            href="/Zeyad_Almahmoudi_Resume_IT_Support.pdf"
+            variant="secondary"
+            download
+          >
+            Download Resume
+          </Button>
         </div>
       </section>
 
       <section
         id="projects"
-        className="border-t border-slate-800 bg-slate-900/30 px-6 py-24"
+        className="scroll-mt-20 border-t border-slate-800 bg-slate-900/30 px-6 py-24"
       >
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
@@ -72,6 +72,7 @@ export default function Home() {
                 "DHCP",
                 "Group Policy",
               ]}
+              href="https://github.com/Zeyad-Admin/windows-file-server-deployment-lab"
             />
 
             <ProjectCard
@@ -84,6 +85,7 @@ export default function Home() {
                 "SQL Server",
                 "OVF",
               ]}
+              href="https://github.com/Zeyad-Admin"
             />
 
             <ProjectCard
@@ -96,16 +98,17 @@ export default function Home() {
                 "PowerShell",
                 "Windows Server",
               ]}
+              href="https://github.com/Zeyad-Admin/hyperv-differencing-disks-lab"
             />
           </div>
         </div>
       </section>
 
       <Experience />
-       <Certifications />
-       <HomeLab />
-       <Contact />
-       <Footer />
+      <Certifications />
+      <HomeLab />
+      <Contact />
+      <Footer />
     </main>
   );
 }

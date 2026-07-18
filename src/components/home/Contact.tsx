@@ -1,9 +1,6 @@
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="border-t border-slate-800 px-6 py-24"
-    >
+    <section id="contact" className="border-t border-slate-800 px-6 py-24">
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
           Contact
@@ -19,8 +16,13 @@ export default function Contact() {
         </p>
 
         <div className="mt-12 space-y-4">
-          <p className="text-slate-300">
-            zeyadalmahmoudi@gmail.com
+          <p>
+            <a
+              href="mailto:zeyadalmahmoudi@gmail.com"
+              className="text-slate-300 transition hover:text-cyan-400"
+            >
+              zeyadalmahmoudi@gmail.com
+            </a>
           </p>
 
           <p className="text-slate-300">

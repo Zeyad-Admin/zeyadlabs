@@ -1,27 +1,27 @@
 const certifications = [
   {
     name: "CompTIA A+",
-    status: "Completed",
+    status: "In Progress",
     description:
-      "Validated foundational skills in hardware, operating systems, troubleshooting, security, networking, and technical support.",
+      "Developing practical knowledge in computer hardware, operating systems, networking, security, troubleshooting, and technical support.",
   },
   {
     name: "CompTIA Network+",
-    status: "Completed",
+    status: "In Progress",
     description:
-      "Validated networking knowledge across TCP/IP, routing, switching, troubleshooting, security, and network operations.",
+      "Preparing for the N10-009 certification with a focus on TCP/IP, routing, switching, network operations, security, and troubleshooting.",
   },
   {
     name: "BCIT Technology Support Professional",
     status: "Completed",
     description:
-      "Completed hands-on training in enterprise infrastructure, Windows Server, networking, virtualization, cloud, deployment, and technical support.",
+      "Completed hands-on training in enterprise infrastructure, Windows Server, networking, virtualization, cloud services, deployment, and technical support.",
   },
   {
     name: "Microsoft Azure Administrator AZ-104",
-    status: "In Progress",
+    status: "Planned",
     description:
-      "Developing Azure administration skills through identity, networking, virtual machines, storage, monitoring, and governance labs.",
+      "Continuing Azure administration development through identity, virtual networking, virtual machines, storage, monitoring, and governance labs.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Certifications() {
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-            Certifications & Learning
+            Certifications &amp; Learning
           </p>
 
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -42,8 +42,8 @@ export default function Certifications() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-300">
-            Formal education, industry certifications, and continuous practical
-            development across enterprise IT technologies.
+            Formal education, certification preparation, and continuous
+            practical development across enterprise IT technologies.
           </p>
         </div>
 
@@ -62,7 +62,9 @@ export default function Certifications() {
                   className={`rounded-full px-3 py-1 text-xs font-semibold ${
                     certification.status === "Completed"
                       ? "bg-emerald-500/10 text-emerald-400"
-                      : "bg-blue-500/10 text-blue-400"
+                      : certification.status === "In Progress"
+                        ? "bg-blue-500/10 text-blue-400"
+                        : "bg-amber-500/10 text-amber-400"
                   }`}
                 >
                   {certification.status}
