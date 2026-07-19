@@ -72,7 +72,7 @@ export default function Home() {
                 "DHCP",
                 "Group Policy",
               ]}
-              href="https://github.com/Zeyad-Admin/windows-file-server-deployment-lab"
+              href="/projects/domain-services"
             />
 
             <ProjectCard
@@ -85,20 +85,20 @@ export default function Home() {
                 "SQL Server",
                 "OVF",
               ]}
-              href="https://github.com/Zeyad-Admin"
+              href="/projects/vmware-proxmox"
             />
 
             <ProjectCard
-              title="Hyper-V and iSCSI Home Lab"
-              description="Built nested Hyper-V hosts connected to shared iSCSI storage using Storage Spaces, parity, private storage networking, and enterprise-style validation."
+              title="Hyper-V Virtualization Platform"
+              description="Built nested Hyper-V hosts supporting multiple server workloads, isolated virtual networks, shared storage, and enterprise infrastructure testing."
               technologies={[
                 "Hyper-V",
-                "iSCSI",
-                "Storage Spaces",
+                "Virtual Switches",
+                "Nested Virtualization",
                 "PowerShell",
                 "Windows Server",
               ]}
-              href="https://github.com/Zeyad-Admin/hyperv-differencing-disks-lab"
+              href="/projects/virtualization-platform"
             />
           </div>
         </div>
